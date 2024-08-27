@@ -1,0 +1,32 @@
+Metadata for Raw Data Sets
+
+1. weather_conditions.xlsx
+   - Description: The weather conditions at the Mount Hotel in Somerset, including solar radiation and ambient temperature. For the temperature, both the raw temperature estimate as well as a modelled 'feels like' temperature are included. 
+     - Measured Variables:
+     - Timestamp: An hourly timestep through one year.
+     - Temp: The ambient air temperature at each time step.
+     - Rain: The precipitation at each time step.
+     - Solar radiation: The solar radiation at each time step.
+     - Wind: The wind speed.
+     - 'Feels like' temp: The 'feels like' temperature is a weighted average of the raw temperature, rain volume, wind speed and solar radiation.
+   - Date of Creation/Acquisition: [2024-07-30]
+   - Source: Element Power
+
+2. heating_load.xlsx
+   - Description: The Heat demand for the year at the Mount Hotel in Somerset, including both the modelled space heating demand and the estimated hot water demand for the building.
+     - Measured Variables:
+     - Timestamp: An hourly timestep through one year.
+     - heating load: The energy needed to heat the space in the building.
+     - hot water load: The energy needed to provide the hot water in the building.
+     - total: The total energy needed for heating, both the space and hot water.
+   - Date of Creation/Acquisition: [2024-07-30]
+   - Source: Element Power
+
+3. df_fuel_ckan.csv
+   - Description: The historic generation mix and carbon intensity in UK from 2009-01-01 to 2024-07-31.
+     - Measured Variables:
+     - DATETIME: An half-hourly timestep.
+     - CARBON_INTENSITY: The carbon intensity of electricity, measures how much carbon dioxide emissions are produced per kilowatt hour.
+     - Other variables are not being used for this analysis.
+   - Date of Creation/Acquisition: [2024-07-31]
+   - Source: [National Grid ESO] (https://www.nationalgrideso.com/data-portal/historic-generation-mix)
